@@ -47,6 +47,26 @@ WHERE (de.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY emp_no;
 
+-- Challenge Deliverable 3
+-- Roles that need to be filled as the "silver tsunami" begins to make an impact
+SELECT SUM(rt.count)
+INTO total_roles
+FROM retiring_titles as rt;
+
+-- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+SELECT COUNT(me.title), me.title
+INTO mentorship_dept
+FROM mentorship_eligibility as me
+GROUP BY me.title
+ORDER BY COUNT(me.title) DESC;
+
+-- total mentorship eligible
+SELECT SUM(md.count)
+INTO total_mentors
+FROM mentorship_dept as md;
+
+
+
 
 
 
