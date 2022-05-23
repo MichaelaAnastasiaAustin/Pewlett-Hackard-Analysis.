@@ -22,13 +22,14 @@ Finally, we created a table  that holds the employees who are eligible to partic
 
 ## Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
 To identify the total number of roles that will need to be filled as the "silver tsunami" begins to make an impact, we applied SUM to the "retiring_titles" query, as listed in the Employee_Database_challenge.sql file. The output, saved as [total_roles](Data/total_roles.csv), tells us that there are 72,458 total roles that will need to be filled.
 
 
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-To determine if there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees, we created another query, applying GROUPBY so that we can group the mentor-eligible employees by department(see Employee_Database_challenge.sql file for query). This resulted in a new table "mentorship_dept", which we can use to quickly compare to "retiring_titles". In doing so, we can see that there are significantly less mentor-eligible employees than there are retiring titles. So, we will need to look externally for support in mentoring the next generation of Pewlett Hackard employees.
+To determine if there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees, we created another query, applying GROUPBY so that we can group the mentor-eligible employees by department(see Employee_Database_challenge.sql file for query). This resulted in a new table linked here [mentorship_dept](Data/mentorship_dept.csv), which we can use to quickly compare to "retiring_titles". In doing so, we can see that there are significantly less mentor-eligible employees than there are retiring titles. So, we will need to look externally for support in mentoring the next generation of Pewlett Hackard employees.
 
-[mentorship_dept](Data/mentorship_dept.csv)
+![mentorship_dept](https://github.com/MichaelaAnastasiaAustin/Pewlett-Hackard-Analysis./blob/main/mentorship_dept_IMG.png)
+
